@@ -15,7 +15,7 @@ export async function getStaticProps() {
   }
 }
 
-export default function Home({ allPostsData }) {
+export default function Home({ allPostsData }: { allPostsData: {date: string, id: string, title: string}[]}) {
   return (
     <Layout home>
       <Head>
